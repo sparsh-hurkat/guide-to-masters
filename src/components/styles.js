@@ -35,6 +35,9 @@ const styles = (theme) => ({
       outline: `2px solid ${theme.palette.primary.main}`,
       outlineOffset: 0,
     },
+    [theme.breakpoints.down("sm")]: {
+      width: "90%",
+    },
   },
   holdToRedirectButtonProgress: {
     position: "absolute",

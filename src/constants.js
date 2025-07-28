@@ -2,8 +2,8 @@ export const sections = [
   {
     content: `This blog is a practical, step-by-step guide for anyone planning to pursue a master’s abroad. It’s based on what I learned, what worked, what I wish I had done differently, and what I saw others do right or wrong.
     I have outlined every major step I took after committing to my master’s journey — from selecting universities to acing the GRE, building my resume, and preparing for the visa interview.
-
-    This isn’t a one-size-fits-all roadmap, but if you're feeling overwhelmed or unsure where to start — this should help bring structure and clarity to your journey.
+    
+This isn’t a one-size-fits-all roadmap, but if you're feeling overwhelmed or unsure where to start — this should help bring structure and clarity to your journey.
 
 If you are interested in my journey to Carnegie Mellon University, you can read it [here](/guide-to-masters/#/my-story).`,
   },

@@ -12,64 +12,76 @@ function Home() {
 
   return (
     <>
-      <div className="container">
+      <Grid className="container">
         <header>
-          <Grid sx={{ textAlign: "center" }} item>
+          <Grid
+            sx={{
+              textAlign: "center",
+            }}
+            item
+          >
             <Typography
               sx={{
+                width: "100%",
                 color: `${theme.palette.text.secondary} !important`,
                 display: "inline-block",
-                fontSize: "70px",
-                padding: "16px 0",
-                lineHeight: ".8",
-                [theme.breakpoints.down("sm")]: {
-                  fontSize: "40px",
+                fontSize: {
+                  xs: "2.2rem",
+                  sm: "2.8rem",
+                  md: "3.5rem",
+                  lg: "4rem",
                 },
+                padding: "16px 0",
+                lineHeight: ".9",
               }}
             >
-              Sparsh's Guide to Master's
+              {"Sparsh's Guide to Master's"}
             </Typography>
           </Grid>
         </header>
-        {sections.map((section, idx) => {
-          if (section.title && section.content) {
-            return (
-              <Accordion
-                key={idx}
-                title={section.title}
-                icon={section.icon}
-                expanded={expandedIdxs.includes(idx)}
-                onChange={(_, isExpanded) => {
-                  setExpandedIdxs((prev) =>
-                    isExpanded ? [...prev, idx] : prev.filter((i) => i !== idx)
-                  );
-                }}
-              >
-                <div className="section-content-block">
+        <Grid container sx={{ width: { xs: "90%", md: "60%" } }}>
+          {sections.map((section, idx) => {
+            if (section.title && section.content) {
+              return (
+                <Accordion
+                  key={idx}
+                  title={section.title}
+                  icon={section.icon}
+                  expanded={expandedIdxs.includes(idx)}
+                  onChange={(_, isExpanded) => {
+                    setExpandedIdxs((prev) =>
+                      isExpanded
+                        ? [...prev, idx]
+                        : prev.filter((i) => i !== idx)
+                    );
+                  }}
+                >
+                  <div className="section-content-block">
+                    <ReactMarkdown>{section.content}</ReactMarkdown>
+                  </div>
+                </Accordion>
+              );
+            } else if (section.content) {
+              return (
+                <div
+                  key={idx}
+                  style={{
+                    marginBottom: "24px",
+                    color: "#ccc",
+                    fontSize: "1rem",
+                    textAlign: "center",
+                  }}
+                >
                   <ReactMarkdown>{section.content}</ReactMarkdown>
                 </div>
-              </Accordion>
-            );
-          } else if (section.content) {
-            return (
-              <div
-                key={idx}
-                style={{
-                  marginBottom: "24px",
-                  color: "#ccc",
-                  fontSize: "1.1rem",
-                  textAlign: "center",
-                }}
-              >
-                <ReactMarkdown>{section.content}</ReactMarkdown>
-              </div>
-            );
-          } else {
-            return null;
-          }
-        })}
+              );
+            } else {
+              return null;
+            }
+          })}
+        </Grid>
         <Contact />
-      </div>
+      </Grid>
       <HoldToRedirectButton
         link="https://sparshhurkat.vercel.app/"
         label="If you have any questions about my journey, press and hold to ask SPOT"
