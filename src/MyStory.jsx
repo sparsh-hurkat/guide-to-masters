@@ -8,7 +8,7 @@ function MyStory() {
     <div className="container">
       <CloseIcon
         onClick={() => {
-          window.location.href = "/";
+          window.location.href = "/guide-to-masters/";
         }}
         sx={{
           position: "absolute",
