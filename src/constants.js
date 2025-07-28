@@ -5,7 +5,7 @@ export const sections = [
 
     This isn’t a one-size-fits-all roadmap, but if you're feeling overwhelmed or unsure where to start — this should help bring structure and clarity to your journey.
 
-If you are interested in my journey to Carnegie Mellon University, you can read it [here](/guide-to-masters/my-story).`,
+If you are interested in my journey to Carnegie Mellon University, you can read it [here](/guide-to-masters/#/my-story).`,
   },
   {
     icon: "🎯",

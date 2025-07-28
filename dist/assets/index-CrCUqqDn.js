@@ -200,7 +200,7 @@ export default theme;`}function ad(t={},...r){const{breakpoints:a,mixins:l={},sp
 
     This isn’t a one-size-fits-all roadmap, but if you're feeling overwhelmed or unsure where to start — this should help bring structure and clarity to your journey.
 
-If you are interested in my journey to Carnegie Mellon University, you can read it [here](/guide-to-masters/my-story).`},{icon:"🎯",title:"Step 1: Deciding You Want to Do a Master’s",content:`### The Most Crucial Step
+If you are interested in my journey to Carnegie Mellon University, you can read it [here](/guide-to-masters/#/my-story).`},{icon:"🎯",title:"Step 1: Deciding You Want to Do a Master’s",content:`### The Most Crucial Step
 This is the most crucial step in the entire journey. Once you commit to this decision, everything else — from applications to finances — will begin to fall into place.
 
 But let me be brutally honest: You will start bleeding money after this point. So, do your research now. Talk to people who’ve already been through this journey. Be 100% sure this is what you want.
