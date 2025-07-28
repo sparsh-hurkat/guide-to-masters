@@ -11,8 +11,8 @@ function App() {
       <CssBaseline />
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/my-story" element={<MyStory />} />
+          <Route path="/guide-to-masters/#/" element={<Home />} />
+          <Route path="/guide-to-masters/#/my-story" element={<MyStory />} />
         </Routes>
       </Router>
     </ThemeProvider>
