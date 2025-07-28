@@ -2,7 +2,7 @@ import { ThemeProvider, CssBaseline } from "@mui/material";
 import darkTheme from "./theme";
 import Home from "./Home";
 import MyStory from "./MyStory";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./globals.css";
 
 function App() {
