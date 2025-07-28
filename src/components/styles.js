@@ -1,0 +1,58 @@
+const styles = (theme) => ({
+  buttonContainer: {
+    flexDirection: "column",
+    position: "fixed",
+    paddingBottom: "6px",
+    paddingTop: "12px",
+    bottom: 0,
+    left: 0,
+    width: "100vw",
+    justifyContent: "center",
+    alignItems: "center",
+    zIndex: 1200,
+    gap: "6px",
+    backgroundColor: theme.palette.background.default,
+    fontFamily: "Akshar, sans-serif",
+  },
+  holdToRedirectButton: {
+    width: "60%",
+    height: 56,
+    fontFamily: "Akshar, sans-serif",
+    fontSize: "1rem",
+    background: theme.palette.background.default,
+    outline: `2px solid ${theme.palette.primary.main}`,
+    color: theme.palette.text.primary,
+    borderRadius: "16px",
+    boxShadow: "0 2px 8px rgba(0,0,0,0.10)",
+    position: "relative",
+    overflow: "hidden",
+    p: 0,
+    "&:focus-visible": {
+      outline: `2px solid ${theme.palette.primary.main}`,
+      outlineOffset: 0,
+    },
+    "&:focus": {
+      outline: `2px solid ${theme.palette.primary.main}`,
+      outlineOffset: 0,
+    },
+  },
+  holdToRedirectButtonProgress: {
+    position: "absolute",
+    left: 0,
+    top: 0,
+    height: "100%",
+    background: theme.palette.primary.light,
+    zIndex: 1,
+  },
+  holdToRedirectButtonLabel: {
+    position: "relative",
+    zIndex: 2,
+    width: "100%",
+    textAlign: "center",
+    textTransform: "none",
+    transition: "color 0.2s",
+    color: theme.palette.text.primary,
+  },
+});
+
+export default styles;
