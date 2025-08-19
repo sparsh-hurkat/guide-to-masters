@@ -37,7 +37,26 @@ function MyStory() {
         </Grid>
       </header>
       <div className="section-content-block">
-        <ReactMarkdown>
+        <ReactMarkdown
+          components={{
+            a: ({ node, ...props }) => (
+              <a
+                {...props}
+                style={{
+                  color: theme.palette.success.main,
+                  textDecoration: 'none',
+                  transition: 'color 0.2s',
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.color = theme.palette.success.dark || theme.palette.success.main;
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.color = theme.palette.success.main;
+                }}
+              />
+            ),
+          }}
+        >
           {myStoryMarkdown}
         </ReactMarkdown>
       </div>

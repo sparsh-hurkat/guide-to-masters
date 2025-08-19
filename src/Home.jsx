@@ -57,7 +57,28 @@ function Home() {
                   }}
                 >
                   <div className="section-content-block">
-                    <ReactMarkdown>{section.content}</ReactMarkdown>
+                    <ReactMarkdown
+                      components={{
+                        a: ({ node, ...props }) => (
+                          <a
+                            {...props}
+                            style={{
+                              color: theme.palette.success.main,
+                              textDecoration: 'none',
+                              transition: 'color 0.2s',
+                            }}
+                            onMouseEnter={(e) => {
+                              e.target.style.color = theme.palette.success.dark || theme.palette.success.main;
+                            }}
+                            onMouseLeave={(e) => {
+                              e.target.style.color = theme.palette.success.main;
+                            }}
+                          />
+                        ),
+                      }}
+                    >
+                      {section.content}
+                    </ReactMarkdown>
                   </div>
                 </Accordion>
               );
@@ -72,7 +93,28 @@ function Home() {
                     textAlign: "center",
                   }}
                 >
-                  <ReactMarkdown>{section.content}</ReactMarkdown>
+                  <ReactMarkdown
+                    components={{
+                      a: ({ node, ...props }) => (
+                        <a
+                          {...props}
+                          style={{
+                            color: theme.palette.success.main,
+                            textDecoration: 'none',
+                            transition: 'color 0.2s',
+                          }}
+                          onMouseEnter={(e) => {
+                            e.target.style.color = theme.palette.success.dark || theme.palette.success.main;
+                          }}
+                          onMouseLeave={(e) => {
+                            e.target.style.color = theme.palette.success.main;
+                          }}
+                        />
+                      ),
+                    }}
+                  >
+                    {section.content}
+                  </ReactMarkdown>
                 </div>
               );
             } else {

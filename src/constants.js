@@ -35,9 +35,11 @@ Once you’re sure about doing a master’s, the next step is deciding where.
 ### 🛠 Tools I Used for University Selection
 - [US News Rankings](https://www.usnews.com/best-graduate-schools/top-science-schools/computer-science-rankings)
 - [CS Metrics](https://csmetrics.net/)
-- [CS Rankings](https://csrankings.org/#/index?all&us) – Based on publication output and research area
+- [CS Rankings](https://csrankings.org/#/index?all&us) : Based on publication output and research area
+
 Here's the template I used to compare universities: [University selection template](https://docs.google.com/spreadsheets/d/1c2sNT01AdKO2GC46NAa2T7uA9bRvNHEETUoTOzhPVYY/edit?usp=sharing)
-- Reach out to alumni on Linkedin (here’s mine: [https://linkedin.com/in/sparsh-hurkat](https://linkedin.com/in/sparsh-hurkat))`,
+
+Reach out to alumni on Linkedin (here’s mine: [https://linkedin.com/in/sparsh-hurkat](https://linkedin.com/in/sparsh-hurkat))`,
   },
   {
     icon: "🧠",
