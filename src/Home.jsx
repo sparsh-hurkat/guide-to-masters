@@ -124,10 +124,10 @@ function Home() {
         </Grid>
         <Contact />
       </Grid>
-      <HoldToRedirectButton
+      {/* <HoldToRedirectButton
         link="https://sparshhurkat.vercel.app/"
         label="If you have any questions about my journey, press and hold to ask SPOT"
-      />
+      /> */}
     </>
   );
 }
